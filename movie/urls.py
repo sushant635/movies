@@ -11,7 +11,7 @@ urlpatterns = [
     path('movie',views.movie,name='movie'),
     path('collection',views.collection,name='collection'),
     path(
-        "collection/<uuid:uuid>/",
+        "<uuid:uuid>/",
         views.Collectionview.as_view(),
         name="collection_uuid",
     ),

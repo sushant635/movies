@@ -112,6 +112,7 @@ def collection(request):
 class Collectionview(DetailView):
     print("$$$")
     model = Collection
+    print('mrefim')
 
     def get_context_data(self, **kwargs):
         print("EEEE",super().get_context_data(**kwargs))
